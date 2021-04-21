@@ -15,4 +15,4 @@ IF %1 == 7 SET "text=強震警報，預估震度%1級，%sec%秒後抵達"
 @echo {"1":"%1","2":"%sec%"} >file.json
 	
 PowerShell -WindowStyle Hidden -Command "Add-Type -AssemblyName System.Speech; (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak('%text%');"
-PowerShell -Command "py test.py"
+PowerShell -Command "py bot.py"
