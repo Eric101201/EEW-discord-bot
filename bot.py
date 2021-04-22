@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import json
 import asyncio
+import re
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!!!")
